@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Ubuntu:wght@300;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-image: url("pexels-pixabay-76969.jpg");
+  min-height: 100vh;
+  overflow: auto;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  color: #333;
+}
+
+.header h4 {
+  color: #da1e4e;
+  font-weight: 700;
+  font-size: 2.4rem;
+  font-family: 'Ubuntu', serif;
+  text-align: center;
+  margin-top: 20px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.app-main {
+  min-height: 60vh;
+  width: 40vw;
+  margin: 50px auto;
+  padding: 30px;
+  text-align: center;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+}
+
+.app-main > * {
+  margin-bottom: 20px;
+}
+
+.input-box {
+  width: 100%;
+  background: #f5f5f5;
+  color: #333;
+  font-weight: 500;
+  border: 2px solid #e4603a;
+  font-size: 1.7rem;
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.input-box:focus {
+  border-color: #da1e4e;
+  outline: none;
+  box-shadow: 0px 0px 10px rgba(218, 30, 78, 0.2);
+}
+
+.weather-body {
+  color: #fff;
+  padding: 20px;
+  line-height: 2rem;
+  border-radius: 15px;
+  display: none;
+  background: linear-gradient(to top, #da1e4e, #e4603a);
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.location-details {
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+
+.weather-status {
+  padding: 20px;
+  font-size: 1.2rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.temp {
+  font-size: 5rem;
+  font-weight: 700;
+  margin: 20px 0px;
+  text-shadow: 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.weather {
+  margin-top: 25px;
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.min-max {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-top: 15px;
+}
+
+.day-details {
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.sun-detail,
+.basic {
+  font-size: 1rem;
+}
+
+#weather-icon {
+  color: #fff;
+  font-size: 4rem;
+}
+
+@media screen and (max-width: 800px) {
+  .app-main {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .header h4 {
+    font-size: 2rem;
+  }
+
+  .temp {
+    font-size: 4rem;
+  }
+}
